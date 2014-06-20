@@ -10,7 +10,7 @@ This allows you to build an image to run the NitrogenJS Service.  At image build
 
 The image uses the default service configuration with local storage, MongoDB and a Redis cache.  MongoDB is pulled from the official Ubuntu packages, and Redis is built from the latest sources per Redis recommendations.
 
-To build the NitrogenJS_Service image
+To build the NitrogenJS_Service image, first [install Docker](https://docs.docker.com/) then:
 
     git clone https://github.com/stefangordon/nitrogenjs_docker.git
     cd nitrogenjs_docker/nitrogenjs_service
