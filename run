@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd /data
+redis-server /etc/redis/redis.conf &
+/etc/init.d/mongodb start
+cd /home/nitrogen
+nodejs server.js
