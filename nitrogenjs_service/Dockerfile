@@ -7,9 +7,12 @@
 FROM    ubuntu:14.04
 MAINTAINER Stefan Gordon
 
+COPY . /src
 
 # Install NodeJS
-RUN     apt-get install -y nodejs
+
+RUN apt-get update &&  
+RUN apt-get install -y nodejs
 
 # Install legacy support for 'node' command
 RUN     apt-get install nodejs-legacy
