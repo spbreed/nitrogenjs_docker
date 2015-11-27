@@ -11,7 +11,7 @@ COPY . /src
 
 # Install NodeJS
 
-RUN apt-get update &&  
+RUN apt-get update
 RUN apt-get install -y nodejs
 
 # Install legacy support for 'node' command
